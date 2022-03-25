@@ -7,6 +7,10 @@
 </head>
 <body>
     <h1>Danial's Portfolio</h1>
+    
+    {% load static %}
+    <a href="{% static 'portfolio/Danial Resume.pdf' %}">resume</a>
+    <img src="{% static 'portfolio/need-more-coffee-programmer-story-1920x1080.jpg' %}" alt="">
     {% for project in projects %}
         {{project.title}}
         {{project.description}}
