@@ -3,9 +3,9 @@
     padding-right: 0;
 }
 
-#portfolio-display-pic{
+/* #portfolio-display-pic{
     border-radius:50%;
-}
+} */
 
 .navbar-light .navbar-brand{
     color:rgba(0,0,0,.55);
@@ -23,5 +23,9 @@
 .navbar-light .navbar-nav .nav-link.active {
     color: rgb(56 30 30);
     border-bottom-color:rgba(197, 28, 28, 0.5);
+}
+
+footer a.navbar-brand{
+    color:rgba(0,0,0,.55);
 }
 
