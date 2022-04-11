@@ -1,0 +1,31 @@
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* #portfolio-display-pic{
+    border-radius:50%;
+} */
+
+.navbar-light .navbar-brand{
+    color:rgba(0,0,0,.55);
+    font-weight: 700;
+}
+.nav-link {   
+    font-weight: 700;
+    border-bottom: 0.25rem solid transparent;
+}
+
+.nav-link:hover{
+    border-bottom-color:rgba(197, 28, 28, 0.5);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+    color: rgb(56 30 30);
+    border-bottom-color:rgba(197, 28, 28, 0.5);
+}
+
+footer a.navbar-brand{
+    color:rgba(0,0,0,.55);
+}
+
