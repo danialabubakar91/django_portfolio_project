@@ -29,10 +29,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['danialportfolio.herokuapp.com', 'http://127.0.0.1:8000/'] 
-
+ALLOWED_HOSTS = ['danialportfolio.herokuapp.com', '*'] 
+#http://127.0.0.1:8000/
 
 # Application definition
 
@@ -42,8 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'cloudinary_storage',
     'django.contrib.staticfiles',
+    'cloudinary_storage',
     'cloudinary',
     'blog',
     'portfolio',
@@ -131,9 +131,11 @@ CLOUDINARY_STORAGE = {
     'API_SECRET': env('CLOUDINARY_SECRET') 
 }
 
-
+#Static files (CSS, Javascript, static images)
 STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
+#Store media files in cloudinary
 MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 # MEDIA_ROOT = os.path.join(BASE_DIR,'media')
